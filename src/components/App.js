@@ -2,7 +2,7 @@ import React from 'react';
 
 import logo from '../logo.svg';
 import './App.css';
-
+//import TodoList from './TodoList';
 
 class App extends React.Component {
   render() {
@@ -13,8 +13,7 @@ class App extends React.Component {
           <h1 className="App-title">To-Do-List</h1>
         </header>
         <div>
-          
-        </div>   
+        </div>            
       </div>
     );
   }
