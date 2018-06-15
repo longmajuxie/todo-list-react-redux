@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-
+/**
+ * Link is a link with a callback.
+ *onClick() is a callback to invoke when the link is clicked.
+ */
 class Link extends PureComponent {
   static propTypes = {
     active: PropTypes.bool.isRequired,
