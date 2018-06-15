@@ -9,8 +9,7 @@ class TodoList extends PureComponent {
         id: PropTypes.number.isRequired,
         completed: PropTypes.bool.isRequired,
         text: PropTypes.string.isRequired
-      }).isRequired
-    ).isRequired,
+      }).isRequired).isRequired,
     onTodoClick: PropTypes.func.isRequired
   }
 
@@ -22,8 +21,8 @@ class TodoList extends PureComponent {
 
     return (
       <ul>
-        {todos.map((todo, index) => (
-          <Todo key={index} {...todo} onClick={() => onTodoClick(index)} />
+        {todos.map(todo => (
+          <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
         ))}
       </ul>
     )
